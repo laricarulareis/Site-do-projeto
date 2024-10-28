@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escporte Clube</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="styles.css">
+   
+
+</head>
+<body>
+  <header class="cabeçalho">
+    <div class=caixa>
+        <input type="checkbox" id="menu" class="caixa-botao">
+        <label for="menu">
+    <span class="cabeçalho-menu-amburguer caixa-imagem"></span></label>
+    <ul class="lista-menu">
+        <li class="lista-menu-titulo"> Animais</li>
+        <li class="lista-menu-itens"><a href="#" class="lista-menu-link">cachorro</a>
+        </li>
+        <li class="lista-menu-itens"><a href="#" class="lista-menu-link">gato</a>
+        </li>
+        <li class="lista-menu-itens"><a href="#" class="lista-menu-link">coelho</a>
+        </li>
+        <li class="lista-menu-itens"><a href="#" class="lista-menu-link">cavalo</a>
+        </li>
+        <li class="lista-menu-itens"><a href="#" class="lista-menu-link">golfinho</a>
+        </li>
+        <li class="lista-menu-itens"><a href="#" class="lista-menu-link">leão</a>
+        </li>
+    </ul>
+    <a href="#"><img class=caixa-imagem src="carrinho de compras.svg" alt="carrinho de compras"></a></div>
+   
+    <div class=caixa><a href="#"><li class="cadastro">CADASTRO</li></a><a href="#"><img  class=caixa-imagem src="home.svg" alt="home"></a>
+    <a href="#" ><img  class=caixa-imagem src="meus favoritos.svg" alt="meus favoritos"></a></div>
+</header>
+<section class="banner">
+    <h2 class="banner-titulo"> Você Já sabe por onde começar?</h2>
+    <p class="banner-texto"> Saiba mais sobre o seu animal favorito</p>
+    <input type="search" class="banner-pesquisa" 
+   placeholder="Qual será seu animal escolhido?">
+</section>
+<section class="carrossel">
+    <h2 class="carrossel-titulo"> CONHEÇA SEUS BICHOS FAVORITOS!</h2>
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="Pitbull.webp" alt="cachorro"></div>
+      <div class="swiper-slide"><img src="gato.webp" alt="gato"></div>
+      <div class="swiper-slide"><img src="coelho.webp" alt="coelho"></div>
+      <div class="swiper-slide"><img src="cavalo.webp" alt="cavalo"></div>
+      <div class="swiper-slide"><img src="golfinho.webp" alt="golfinho"></div>
+      <div class="swiper-slide"><img src="lion.jpg" alt="leão"></div>
+    </div>
+   
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="card">
+                <!-- 1º linha -->
+      <div class="card-descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <h3 class="decrição-titulo"> SAIBA MAIS SOBRE O SEU BICHINHO PREDILETO,
+             AQUI A DIVERSÃO É GARANTIDA PARA VOCÊ, SUA FAMÍLIA E SEUS AMIGOS.</h3>
+
+             <h2 Class="descrição-piscina"> DE UM PET DE ESTIMAÇÃO, ATÉ O MAIS TEMIDO DA FLORESTA. </h2>
+
+             <p class="descriçã-texto">FIQUE POR DENTRO DAS NOVIDADES E ATUALIZAÇÕES. </p> </div>
+             <!-- 2º coluna -->
+              <img src="animalpreferido.jpg" class="descrição-imagem">
+      </div>
+      <!-- 2º linha -->
+       <div class="card-botões">
+         <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões-item"><img src="meus favoritos.svg" alt="favoritar piscina"></li>
+          <li class="botões-item"><img src="carrinho de compras.svg" alt="adicionar no carrinho"></li>
+        </ul>
+        <!-- 2º coluna -->
+         <a href="#" class="botões-ancora">CONHEÇA OUTRAS OPÇÕES</a>
+       </div>
+    </div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+</section>
+<section class="tópicos">
+  <h2 class= "tópicos-titulo"> TÓPICOS VIZITADOS RECENTEMENTE</h2>
+  <ul class="tópicos-lista">
+<li class="tópicos-item"> <a href="#" class="tópicos-link">Cachorro</a></li>
+<li class="tópicos-item"> <a href="#" class="tópicos-link">Gato</a></li>
+<li class="tópicos-item"> <a href="#" class="tópicos-link">Coelho</a></li>
+<li class="tópicos-item"> <a href="#" class="tópicos-link">Cavalo</a></li>
+<li class="tópicos-item"> <a href="#" class="tópicos-link">Golfinho</a></li>
+<li class="tópicos-item"> <a href="#" class="tópicos-link">Leão</a></li>
+
+  </ul>
+
+</section>
+<section class="contato">
+<h2 class="contato-titulo">Fique por dentro das novidades</h2>
+<p class="contato-texto">atualizações, promoções e outros</p>
+<input type="email" placeholder="Cadastre seu e-mail" class="contato-email">
+</section>
+<hr />
+
+<footer class="rodapé"><h2 class="rodapé-titulo">WHATSAPP</h2></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script> const swiper = new Swiper('.swiper', {
+    spaceBetween: 10, slidesPerView: 3,
+    pagination: { el: '.swiper-pagination',
+        type: 'bullets',},
+    });</script>
+</body>
+</html>
